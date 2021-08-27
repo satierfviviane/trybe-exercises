@@ -64,12 +64,27 @@ for (index = 0; index < numbers.length; index += 1) {
         count += 1;
     }
 }
-console.log('Há ' + count + ' números ímpares no array');
+if (count === 0) {
+    console.log('nenhum valor ímpar encontrado');
+} else {
+    console.log(count);
+}
 
 // Exercicio 7
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let minusNum = numbers[0];
 
 for (i = 1; i < numbers.length; i += 1) {
-    
+    if (minusNum > numbers[i]) {
+        minusNum = numbers[i];
+    }
 }
+console.log(minusNum);
+
+// Exercício 8
+let newArray = [];
+
+for (i = 1; i <= 25; i += 1){
+    newArray.push(i);
+}
+console.log(newArray);
