@@ -127,7 +127,7 @@ else {
     console.log("Nota F")
 }
 
-// Exercício 8
+// Exercício 8 - Usar somente um if
 const A = 31;
 const B = 67;
 const C = -993;
@@ -138,7 +138,7 @@ if (A % 2 === 0 || B % 2 === 0 || C % 2 === 0) {
     console.log('false');
 }
 
-// Exercício 9
+// Exercício 9 - Usar somente um if
 const A = 6;
 const B = 4; 
 const C = 222; 
@@ -149,3 +149,21 @@ if ((A % 2) !== 0 || (B % 2) !== 0 || (C % 2) !== 0){
 else {
     console.log(false);
 }
+
+// Exercício 10 - 
+const imposto = 1.20; // 1.20 notacao para 20%
+
+const valorCusto = 100;
+
+const valorVenda = 120;
+
+if (imposto < 0 || valorCusto < 0 || valorVenda < 0 ){
+    console.log('Valor menor que zero');
+} else {
+    const valorCustoTotal = valorCusto * imposto;
+    const lucro = valorVenda - valorCustoTotal;
+    console.log('O custo total do produto é: R$'+ valorCustoTotal + ' e o lucro é: R$' + lucro);
+}
+
+
+
