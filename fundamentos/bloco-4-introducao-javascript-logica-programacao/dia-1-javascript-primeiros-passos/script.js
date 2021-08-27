@@ -39,3 +39,14 @@ if (numA > numB && numA > numC) {
 } else {
     console.log(numC);
 }
+
+// Exercício 4
+const numD = 0;
+
+if (numD > 0) {
+    console.log('positive');
+} else if (numD < 0) {
+    console.log('negative');
+} else {
+    console.log('zero');
+}
