@@ -1,11 +1,9 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let majorNum = 0;
+let count = 0;
 
 for (index = 0; index < numbers.length; index += 1) {
-    if (majorNum < numbers[index]) {
-        majorNum = numbers[index];
-    } else {
-        majorNum = majorNum;
+    if (numbers[index] % 2 !== 0) {
+        count += 1;
     }
-} 
-console.log(majorNum);
+}
+console.log('Há ' + count + ' números ímpares no array');

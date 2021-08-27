@@ -13,7 +13,7 @@ for (let i = 0; i < numbers.length; i += 1) {
 }
  console.log(sumArray);
 
-// Exercício 3
+// Exercício 3 
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let result = 0;
 let media = 0;
@@ -25,7 +25,7 @@ for (let i = 0; i < numbers.length; i += 1) {
 media = result / numbers.length;
 console.log(media);
 
-// Exercicio 4 e 5
+// Exercicio 4 
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let result = 0;
 let media = 0;
@@ -41,3 +41,29 @@ if (media > 20) {
 } else {
     console.log('Valor menor que 20');
 }
+
+// Exercício 5 
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let majorNum = 0;
+
+for (index = 0; index < numbers.length; index += 1) {
+    if (majorNum < numbers[index]) {
+        majorNum = numbers[index];
+    } else {
+        majorNum = majorNum;
+    }
+} 
+console.log(majorNum);
+
+// Exercicio 6
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let count = 0;
+
+for (index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] % 2 !== 0) {
+        count += 1;
+    }
+}
+console.log('Há ' + count + ' números ímpares no array');
+
+//
