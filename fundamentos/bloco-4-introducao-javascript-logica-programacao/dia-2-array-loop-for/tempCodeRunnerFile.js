@@ -1,9 +1,9 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let count = 0;
+let minusNum = numbers[0];
 
-for (index = 0; index < numbers.length; index += 1) {
-    if (numbers[index] % 2 !== 0) {
-        count += 1;
+for (i = 1; i < numbers.length; i += 1) {
+    if (minusNum > numbers[i]) {
+        minusNum = numbers[i];
     }
 }
-console.log('Há ' + count + ' números ímpares no array');
+console.log(minusNum);
