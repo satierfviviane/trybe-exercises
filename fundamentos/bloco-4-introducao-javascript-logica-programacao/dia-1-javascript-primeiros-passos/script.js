@@ -50,3 +50,24 @@ if (numD > 0) {
 } else {
     console.log('zero');
 }
+
+// Exercício 5
+// Para os ângulos serem de um triângulo válido, a soma dos três devem ser 180 graus.
+// Um ângulo será considerado inválido se não tiver um valor positivo.
+let anguloA = 90;
+let anguloB = 45;
+let anguloC = 45;
+
+let somaAngulos = anguloA + anguloB + anguloC
+let angulosPositivos = anguloA > 0 && anguloB > 0 && anguloC > 0;
+
+if (angulosPositivos) {
+    if (somaAngulos === 180){
+        console.log(true);
+    }
+    else {
+        console.log(false);
+    }
+} else {
+    console.log("Erro ângulo inválido");
+}

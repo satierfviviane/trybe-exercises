@@ -1,9 +1,17 @@
-const numD = 0;
+let anguloA = 90;
+let anguloB = 45;
+let anguloC = 45;
 
-if (numD > 0) {
-    console.log('positive');
-} else if (numD < 0) {
-    console.log('negative');
+let somaAngulos = anguloA + anguloB + anguloC
+let angulosPositivos = anguloA > 0 && anguloB > 0 && anguloC > 0;
+
+if (angulosPositivos) {
+    if (somaAngulos === 180){
+        console.log(true);
+    }
+    else {
+        console.log(false);
+    }
 } else {
-    console.log('zero');
+    console.log("Erro ângulo inválido");
 }
