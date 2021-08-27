@@ -1,6 +1,5 @@
-let newArray = [];
-
-for (i = 1; i <= 25; i += 1){
-    newArray.push(i / 2);
-}
-console.log(newArray);
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+numbers.sort(function (a, b) {
+    return b - a;
+});
+console.log(numbers);
