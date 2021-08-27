@@ -71,3 +71,33 @@ if (angulosPositivos) {
 } else {
     console.log("Erro ângulo inválido");
 }
+
+// Exercicio 6
+// ToLowerCase in https://www.w3schools.com/jsref/jsref_tolowercase.asp
+let pecaXadrez = "TORRE";
+
+switch (pecaXadrez.toLowerCase()){
+case "rei":
+    console.log("Rei: se move em qualquer direção, mas só uma casa por vez");
+    break;
+
+case "rainha" :
+    console.log("Rainha: pode se mover em qualquer direção, quantas casas quiser");
+    break;
+
+case "torre":
+    console.log("Torre: pode se mover na vertical e na horizontal, quantas casas quiser");
+    break;
+
+case "bispo":
+    console.log("Bispo: move-se na diagonal, quantas casas quiser");
+    break;
+    
+case "cavalo":
+    console.log("Cavalo: move-se em L, pode saltar sobre outras peças");
+    break;
+
+case "peão":
+    console.log("Peão: move-se uma casa para frente, exceto no primeiro movimento, quando pode mover-se em duas casas");
+    break;
+}
