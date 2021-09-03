@@ -5,9 +5,10 @@ class Pokemon extends React.Component{
     render () {
         const { pokemon } = this.props;
         return (
-            <section>
+            <section className="pokemon-card">
                 <h1>{ pokemon.name }</h1>
                 <p>{ pokemon.type }</p>
+                <p>{`Average Weight ${pokemon.averageWeight.value} ${pokemon.averageWeight.measurementUnit}`}</p>
                 <img src={ pokemon.image } alt={ pokemon.name } />  
 
             </section>
@@ -18,7 +19,3 @@ class Pokemon extends React.Component{
 export default Pokemon;
 
 
-// nome do pokemon;
-// tipo do pokemon;
-// peso médio do pokemon, acompanhado da unidade de medida usada;
-// imagem do pokemon.
